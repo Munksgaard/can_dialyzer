@@ -36,4 +36,9 @@ config :spark,
     "Ash.Domain": [section_order: [:resources, :policies, :authorization, :domain, :execution]]
   ]
 
+config :can_dialyzer,
+  ash_domains: [
+    CanDialyzer.Bug
+  ]
+
 import_config "#{config_env()}.exs"
